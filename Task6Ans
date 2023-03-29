@@ -23,3 +23,9 @@ y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 rmse = mse ** 0.5
 print("Root Mean Squared Error: ", rmse)
+
+
+
+In this program, we first import the necessary libraries for machine learning in Python. We then load the dataset into a pandas dataframe and split the data into training and testing sets using the train_test_split function. We use the LinearRegression algorithm to train the model on the training set and predict on the testing set using the predict function.
+
+Finally, we evaluate the model by calculating the mean squared error (MSE) and root mean squared error (RMSE) using the mean_squared_error function from scikit-learn. This gives us a measure of how well the model is able to predict the house prices based on their square footage.
